@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Портфолио</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="shadow-circle">
+        <div class="title">
+            <h1>Добро пожаловать</br>на моё портфолио!</h1>
+            <p>В портфолио отдельные участки закрыты</br>в целях сохранения конфиденциальной информации.</p>
+        </div>
+
+        <button onclick="downloadFile()" download class=" glow-on-hover">
+            СКАЧАТЬ ПРЕЗИНТАЦИЮ
+        </button>
+    </div>
+</body>
+
+<script>
+    function downloadFile() {
+        const link = document.createElement('a');
+        link.href = 'https://www.dropbox.com/scl/fi/axpr0w4ilr0ou41hwvzuc/..pptx?rlkey=zwkmoh4jyht0u5oyk5t4escj4&st=xd483vf6&dl=1';
+        link.click();
+    }
+</script>
+
+</html>
